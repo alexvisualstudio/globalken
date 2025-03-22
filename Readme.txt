@@ -47,6 +47,6 @@ Utilisateur: http://adresse_ip_serveur/globalken/index.php
 Administrateur: http://adresse_ip_serveur/globalken/?action=login
 
 9- Finaliser les configurations de l'application
-Se connecter en tant qu'administrateur sur l'application à partir du lien ci-dessous, puis se rendre au menu configuration, choisir la langue francaise et definir l'url exacte de l'pplication au niveau de l'onglet url link verification
+Se connecter en tant qu'administrateur sur l'application à partir du lien ci-dessous, puis se rendre au menu configuration, choisir la langue francaise et definir l'url exacte de l'application au niveau de l'onglet url link verification.
 
 
