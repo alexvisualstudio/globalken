@@ -1,52 +1,52 @@
+---------- README: INSTALLING THE GLOBALKEN PLATFORM ------------
 
----------- README : INSTALLATION DE LA PLATEFORME GLOBALKEN ------------
-
-Les prerequies:
+Prerequisites:
 - Apache: 2.4.27
 - PHP: 7.4.33
 - MySql: 8.0.36
 
 1- Introduction
-La plateforme Globalken est une base de connaissance qui permet aux entreprises d’archiver, de gérer et d’organiser les sujets 
-et articles afin que ses utilisateurs puissent effectuer des recherches plus faciles sur des informations qui été ont publié sur 
-l’application. Elle est constituée d’une page web et repose sur une architecture MVC.
+The Globalken platform is a knowledge base that allows companies to archive, manage, and organize topics 
+and articles so that users can more easily search for information published on the application. It consists 
+of a single web page and is based on an MVC architecture.
 
-2- Après avoir télécharger le fichier zipper, vuos devez le dezipper
+Brief description:
+The Globalken platform is a knowledge base that allows companies to archive, manage, and organize data into 
+categories and articles to facilitate access to information for users.
 
+2- After downloading the zip file, you must unzip it.
 
-3- Copier le dossier dans le repertoire sur votre serveur (Wamp/Zamp,Linux)
-Ex: Sur Linux, le copier dans le repertoire /home
+3- Copy the folder to the directory on your server (Wamp/Zamp, Linux).
+E.g., on Linux, copy it to the /home directory.
 
-4- Pour dézipper le fichier zip et le copier directerement dans le repertoire /html
+4- To unzip the zip file and copy it directly to the /html directory, unzip globalken.zip -d /var/www/html/
 
-unzip globalken.zip -d /var/www/html/
-
-5- Se rendre dans le repertoire /var/www/html/globalken/
+5- Go to the /var/www/html/globalken/ directory.
 
 cd /var/www/html/globalken/
 
-6- Importer la base de donnée (globalken.sql)
+6- Import the database (globalken.sql)
 
 mysql -uroot -p < /var/www/html/globalken/globalken.sql
 
-NB: Le fichier globalken.sql contient deja un script sql qui permet de creer la base de donnee. Donc contactez-vous d'importer la base de donnee puis entrez les acces de connexion
+Note: The globalken.sql file already contains an SQL script that creates the database. So, contact us to 
+import the database and then enter the login credentials.
 
-7- Pour configurer les acces de connexion a la base de donnee, ouvrir le fichier database.php
+7- To configure the database login credentials, open the database.php file.
 
- vim config/database.php
- 
- puis modifier les elements ci-dessous 
- $DB['server']: le hostname (localhost)
- $DB['user']:le nom de l'utilisateur (Ex: root)
- $DB['password']:le mot de passe
- $DB['db']:le nom de base de donnee (globalken)
- 
-8- Pour acceder a l'interface graphique via votre navigateur
+vim config/database.php
 
-Utilisateur: http://adresse_ip_serveur/globalken/index.php
-Administrateur: http://adresse_ip_serveur/globalken/?action=login
+Then modify the following elements:
+$DB['server']: the hostname (localhost)
+$DB['user']: the username (e.g., root)
+$DB['password']: the password
+$DB['db']: the database name (globalken)
 
-9- Finaliser les configurations de l'application
-Se connecter en tant qu'administrateur sur l'application à partir du lien ci-dessous, puis se rendre au menu configuration, choisir la langue francaise et definir l'url exacte de l'application au niveau de l'onglet url link verification.
+8- To access the graphical interface via your browser:
 
+User: http://server_ip_address/globalken/index.php
+Administrator: http://server_ip_address/globalken/?action=login
 
+9- Finalize the application configuration:
+Log in as an administrator to the application using the link below, then go to the configuration menu, select the French 
+language, and define the exact URL of the application in the URL link verification tab
